@@ -1,0 +1,106 @@
+:root {
+    --primary: #088171;
+    --accent: #5c6bc0;
+    --secondary: #0eaaaf;
+    --primary-text: #141414;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: var(--accent);
+    background-color: var(--secondary);
+  }
+
+.custom-control {
+    color: var(--secondary);
+}
+
+.tasks {
+    position: static;
+    padding-top: 55px;
+    padding-left: 50px;
+    padding-right: 20px;
+    color: var(--primary-text);
+}
+
+h1 {
+    color: var(--accent);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--primary);
+}
+
+.navbar-brand {
+    color: var(--primary-text);
+}
+
+.list-group-item {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.dueDate {
+    float: right;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.removeCircle {
+    float: right;
+    transition: transform .5s;
+    color: var(--primary-text);
+    margin: 0 auto;
+}
+  
+.removeCircle:hover {
+transform: scale(1.5);
+}
+
+button {
+    background-color: var(--primary);
+    transition: transform .5s;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-bottom: 9px;
+}
+
+button:hover {
+    transform: scale(1.25);
+}
+
+.checkBox {
+    transition: transform .5s;
+    margin: 0 auto;
+    color: var(--accent)
+}
+
+.checkBox:hover {
+    transform: scale(1.5);
+}
+
+form {
+    padding-left: 50px;
+}
+
+.newTask {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.newDate {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.strikeText {
+    text-decoration: line-through;
+}
